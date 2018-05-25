@@ -9,6 +9,7 @@
 20.times do
   Restaurant.create(
     title: Faker::HowIMetYourMother.catch_phrase,
+    rating: 5,
     author: Faker::HowIMetYourMother.character,
     body: Faker::HowIMetYourMother.quote,
   )

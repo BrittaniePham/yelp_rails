@@ -1,6 +1,6 @@
 class RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.all
+    @restaurants = Restaurant.order(updated_at: :DESC)
   end
 
   def show
@@ -42,7 +42,7 @@ class RestaurantsController < ApplicationController
 
   private 
     def restaurant_params
-      params.require(:restaurant).permit(:title, :author, :body)
+      params.require(:restaurant).permit(:title, :rating, :author, :body)
     end
 
 end

@@ -1,6 +1,7 @@
 <h1>REVIEWS</h1>
 <% @restaurants.each do |review| %>
   <h2><%= review.title %></h2>
+  <h5>rating: <%= review.rating %>/5</h5>
   <h5><%= review.author %></h5>
   <%= review.body%>
   <br/>
