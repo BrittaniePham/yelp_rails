@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+20.times do
+  Restaurant.create(
+    title: Faker::HowIMetYourMother.catch_phrase,
+    author: Faker::HowIMetYourMother.character,
+    body: Faker::HowIMetYourMother.quote,
+  )
+end
+
+puts 'seeded'
