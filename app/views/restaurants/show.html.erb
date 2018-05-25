@@ -1,3 +1,5 @@
 <h1><%= @restaurant.title %></h1>
 <h5>review by: <%= @restaurant.author %></h5>
 <%= @restaurant.body %>
+<br/>
+<%= link_to 'Edit review', edit_restaurant_path%>
