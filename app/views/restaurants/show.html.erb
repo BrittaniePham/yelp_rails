@@ -1,6 +1,6 @@
-<h1><%= @restaurant.title %></h1>
+<h3><%= @restaurant.title %></h3>
 <h5>rating: <%= @restaurant.rating %>/5</h5>
-<h5>review by: <%= @restaurant.author %></h5>
+<h6>review by: <%= @restaurant.author %></h6>
 <%= @restaurant.body %>
 <br/>
 <%= link_to 'Edit review', edit_restaurant_path%>
