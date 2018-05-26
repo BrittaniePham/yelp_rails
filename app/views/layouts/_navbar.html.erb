@@ -1,4 +1,10 @@
-<%= link_to 'Home', root_path %>
-<%= link_to 'About', about_path %>
-<%= link_to 'Reviews', restaurants_path %>
-<%= link_to 'Add Review', new_restaurant_path %>
+<nav>
+ <div class="nav-wrapper red"> 
+    <a class="brand-logo"><%= link_to 'Home', root_path %></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Reviews', restaurants_path %></li>
+    <li><%= link_to 'Add Review', new_restaurant_path %></li>
+  </ul>
+</div>
+</nav>
