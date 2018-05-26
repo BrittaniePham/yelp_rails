@@ -1,15 +1,11 @@
 <h1>Reviews</h1>
-
 <% @restaurants.each do |review| %>
   <h3><%= review.title %></h3>
-
-  <%= form_for review do |f| %>
-    <label>
-      <%= f.check_box :like %>
-      <span>Like</span>
-    </label>
+  <% if(review.like) %>
+    <i class="material-icons">favorite</i>
+  <% else %>
+    <i class="material-icons">favorite_border</i>
   <% end %>
-
   <h5>rating: <%= review.rating %>/5</h5>
   <h6>review by: <%= review.author %></h6>
   <%= review.body%>
